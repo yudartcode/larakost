@@ -8,26 +8,21 @@
             <b>Name:</b> <br />
             {{$user->name}}
             <br><br>
-            @if($user->avatar)
-            <img src="{{asset('storage/'. $user->avatar)}}" width="128px" />
-            @else
-            No avatar
-            @endif
-            <br>
-            <br>
-            <b>Username:</b><br>
+            
+            <b>Email:</b><br>
             {{$user->email}}
-            <br>
-            <br>
+            <br><br>
+            
             <b>Phone number</b> <br>
             {{$user->phone}}
             <br><br>
+            
             <b>Address</b> <br>
             {{$user->address}}
             <br>
             <br>
         </div>
-        <button class="btn btn-primary" name="edit_profile" value="Edit Profile">Edit Profile</button>
+        <a class="btn btn-info text-white btn-sm" href="{{route('users.edit',['id'=>$user->id])}}">Edit Profile</a>
     </div>
 </div>
 

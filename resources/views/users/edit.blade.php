@@ -17,8 +17,8 @@
         <input value="{{$user->name}}" class="form-control" placeholder="Full Name" type="text" name="name" id="name" />
         <br>
         
-        <label for="username">Username</label>
-        <input value="{{$user->username}}" disabled class="form-control" placeholder="username" type="text" name="username" id="username" />
+        <label for="email">Email</label>
+        <input value="{{$user->email}}" disabled class="form-control" placeholder="user@mail.com" type="text" name="email" id="email" />
         <br>
         
         <br>
@@ -29,22 +29,6 @@
         <label for="address">Address</label>
         <textarea name="address" id="address" class="form-control">{{$user->address}}
         </textarea>
-        <br>
-        <label for="avatar">Avatar image</label>
-        <br>
-        Current avatar: <br>
-        @if($user->avatar)
-        <img src="{{asset('storage/'.$user->avatar)}}" width="120px" />
-        <br>
-        @else
-        No avatar
-        @endif
-        <br>
-        <input id="avatar" name="avatar" type="file" class="form-control">
-        <small class="text-muted">Kosongkan jika tidak ingin mengubah avatar</small>
-        <hr class="my-3">
-        <label for="email">Email</label>
-        <input value="{{$user->email}}" disabled class="form-control" placeholder="user@mail.com" type="text" name="email" id="email" />
         <br>
         <input class="btn btn-primary" type="submit" value="Save" />
     </form>
