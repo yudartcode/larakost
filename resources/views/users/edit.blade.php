@@ -21,15 +21,14 @@
         <input value="{{$user->email}}" disabled class="form-control" placeholder="user@mail.com" type="text" name="email" id="email" />
         <br>
         
-        <br>
         <label for="phone">Phone number</label>
-        <br>
         <input type="text" name="phone" class="form-control" value="{{$user->phone}}">
         <br>
+
         <label for="address">Address</label>
-        <textarea name="address" id="address" class="form-control">{{$user->address}}
-        </textarea>
+        <textarea name="address" id="address" class="form-control">{{$user->address}}</textarea>
         <br>
+        
         <input class="btn btn-primary" type="submit" value="Save" />
     </form>
 </div>
