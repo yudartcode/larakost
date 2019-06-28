@@ -1087,7 +1087,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -7713,11 +7713,11 @@ button.close {
 }
 
 .bg-primary {
-    background-color: #5c6ac4 !important
+    background-color: #FEFAD4 !important
 }
 
 a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
-    background-color: #3f4eae !important
+    background-color: #765d69 !important
 }
 
 .bg-secondary {
@@ -12389,7 +12389,7 @@ input[type="checkbox"]:disabled+label::before {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .5rem 1rem;
-    background-color: #202e78;
+    background-color: #8fb9ab;
     border: 0
 }
 
@@ -12848,7 +12848,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .polished-sidebar {
-    background-color: #f4f6f8;
+    background-color: #f1828d;
     border-right: 1px solid #dfe3e8;
     overflow: auto
 }
@@ -12871,7 +12871,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .polished-sidebar ul.polished-sidebar-menu li:hover {
-    background: #b3bcf5;
+    background: #fcd0ba;
     border: none
 }
 
@@ -12885,7 +12885,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .polished-sidebar ul.polished-sidebar-menu li a span {
-    margin-right: 0.75rem
+    margin-right: 0.70rem
 }
 
 .polished-sidebar ul.polished-sidebar-menu li a:active {
@@ -12909,7 +12909,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 html {
-    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
+    font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -12920,7 +12920,7 @@ html {
 }
 
 button, input, optgroup, select, textarea {
-    font-family: inherit
+    font-family: 'Raleway', sans-serif;
 }
 
 html, body {
@@ -12930,7 +12930,7 @@ html, body {
 }
 
 html * {
-    font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif
+    font-family: 'Raleway', sans-serif;
 }
 
 main.container-fluid {
@@ -13040,7 +13040,7 @@ li.list-group-item {
 }
 
 .bg-primary-darkest {
-    background-color: #313d89
+    background-color: #f2cc8c
 }
 
 .bg-primary-lighter {

@@ -11,6 +11,7 @@
     <title>Larakost @yield("title")</title>
     <link rel="stylesheet" href="{{asset('polished/polished.min.css')}}">
     <link rel="stylesheet" href="{{asset('polished/iconic/css/open-iconic-bootstrap.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <style>
         .grid-highlight {
             padding-top: 1rem;
@@ -36,11 +37,11 @@
 
 <body>
 <nav class="navbar navbar-expand p-0">
-        <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0" href="index.html"> Larakost </a>
-        <button class="btn btn-link d-block d-md-none" data-toggle="collapse" data-target="#sidebar-nav" role="button">
+        <button class="btn btn-link d-block" data-toggle="collapse" data-target="#sidebar-nav" role="button">
             <span class="oi oi-menu"></span>
         </button>
-        <input class="border-dark bg-primary-darkest form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" arialabel="Search">
+        <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0" href="\home"> Larakost </a>
+        <input class="border-light bg-primary form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" arialabel="Search">
         <div class="dropdown d-none d-md-block">
             @if(\Auth::user())
             <button class="btn btn-link btn-link-primary dropdown-toggle" id="navbar-dropdown" data-toggle="dropdown">
@@ -60,23 +61,13 @@
         </div>
     </nav>
     <div class="container-fluid h-100 p-0">
-        <div style="min-height: 100%" class="flex-row d-flex align-itemsstretch m-0">
-            <div class="polished-sidebar bg-light col-12 col-md-3 col-lg-2 p-0 collapse d-md-inline" id="sidebar-nav">
+        <div style="min-height: 100%" class="flex-row d-flex align-items-stretch m-0">
+            <div class="polished-sidebar col-12 col-md-3 col-lg-2 p-0 collapse d-md-inline" id="sidebar-nav">
                 <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
-                    <input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search" />
-                    <li><a href="/home"><span class="oi oi-home"></span> Home</a>
-                    <li><a href="{{route('rooms.create')}}"><span class="oi oi-home"></span> Room</a>
-                    </li>
-                    <div class="d-block d-md-none">
-                        <div class="dropdown-divider"></div>
-                        <li><a href="#"> Profile</a></li>
-                        <li>
-                            <form action="{{route("logout")}}" method="POST">
-                                @csrf
-                                <button class="dropdown-item" style="cursor:pointer">Sign Out</button>
-                            </form>
-                        </li>
-                    </div>
+                    <li><a href="/home"><span class="oi oi-menu"></span> Home</a></li>
+                    <li><a href="{{route('users.index')}}"><span class="oi oi-people"></span> Manage People</a></li>
+                    <li><a href="{{route('rooms.index')}}"><span class="oi oi-home"></span> Manage Room</a></li>
+                    <li><a href="#"><span class="oi oi-transfer"></span> Manage Order</a></li>
                 </ul>
             </div>
             <div class="col-lg-10 col-md-9 p-4">

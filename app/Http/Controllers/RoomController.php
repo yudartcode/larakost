@@ -13,7 +13,8 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+        $rooms = \App\Room::paginate(10);
+        return view('rooms.index', ['rooms' => $rooms]);
     }
 
     /**
@@ -47,7 +48,7 @@ class RoomController extends Controller
         $new_room->created_by = \Auth::user()->id;
 
         $new_room->save();
-        return redirect()->route('rooms.create')->with('status', 'Room successfully created');
+        return redirect()->route('rooms.index')->with('status', 'Room successfully created');
     }
 
     /**
@@ -69,7 +70,8 @@ class RoomController extends Controller
      */
     public function edit($id)
     {
-        //
+        $room = \App\Room::findOrFail($id);
+        return view('rooms.edit', ['room' => $room]);
     }
 
     /**
@@ -81,7 +83,18 @@ class RoomController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $room = \App\Room::findOrFail($id);
+        $room->name = $request->get('name');
+        $room->description = $request->get('description');
+        $room->stock = $request->get('stock');
+        $room->price = $request->get('price');
+        if ($request->file('photo')) {
+            $file = $request->file('photo')->store('photos', 'public');
+            $room->photo = $file;
+        }
+        $room->slug = str_slug($request->get('name'));
+        $room->save();
+        return redirect()->route('rooms.index', ['id' => $id])->with('status', 'Room succesfully updated');
     }
 
     /**
