@@ -159,41 +159,21 @@
 }
 
 .Polaris-Button--primary, .btn-primary, .dataTables_wrapper .dataTables_paginate a.current {
-    background: -webkit-gradient(linear, left top, left bottom, from(#6371c7), to(#5563c1));
-    background: -webkit-linear-gradient(top, #6371c7, #5563c1);
-    background: -o-linear-gradient(top, #6371c7, #5563c1);
-    background: linear-gradient(to bottom, #6371c7, #5563c1);
-    border-color: #3f4eae;
-    -webkit-box-shadow: inset 0 1px 0 0 #6774c8, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 0 0 transparent;
-    box-shadow: inset 0 1px 0 0 #6774c8, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 0 0 transparent;
+    background-color: #8fb9a8;
+    border-color: #8fb9a8;
     color: #fff;
     fill: #fff
 }
 
 .Polaris-Button--primary:hover, .btn-primary:hover, .dataTables_wrapper .dataTables_paginate a.current:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(#5c6ac4), to(#4959bd));
-    background: -webkit-linear-gradient(top, #5c6ac4, #4959bd);
-    background: -o-linear-gradient(top, #5c6ac4, #4959bd);
-    background: linear-gradient(to bottom, #5c6ac4, #4959bd);
-    border-color: #3f4eae;
+    background-color: #659280;
+    border-color: #659280;
     color: #fff;
     text-decoration: none
 }
 
 .Polaris-Button--primary:focus, .btn-primary:focus, .dataTables_wrapper .dataTables_paginate a.current:focus {
-    border-color: #202e78;
-    -webkit-box-shadow: inset 0 1px 0 0 #6f7bcb, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 0 1px #202e78;
-    box-shadow: inset 0 1px 0 0 #6f7bcb, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 0 1px #202e78
-}
-
-.Polaris-Button--primary:active, .btn-primary:active, .dataTables_wrapper .dataTables_paginate a.current:active {
-    background: -webkit-gradient(linear, left top, left bottom, from(#3f4eae), to(#3f4eae));
-    background: -webkit-linear-gradient(top, #3f4eae, #3f4eae);
-    background: -o-linear-gradient(top, #3f4eae, #3f4eae);
-    background: linear-gradient(to bottom, #3f4eae, #3f4eae);
-    border-color: #38469b;
-    -webkit-box-shadow: inset 0 0 0 0 transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 1px 0 #38469b;
-    box-shadow: inset 0 0 0 0 transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 1px 0 #38469b
+    border-color: #8fb9a8;
 }
 
 .Polaris-Button--primary.Polaris-Button--disabled, .Polaris-Button--disabled.btn-primary, .btn-primary:disabled, .dataTables_wrapper .dataTables_paginate a.current:disabled, .dataTables_wrapper .dataTables_paginate a.btn-primary.previous:disabled, .dataTables_wrapper .dataTables_paginate a.btn-primary.next:disabled, .dataTables_wrapper .dataTables_paginate a.btn-primary.paginate_button:disabled, .dataTables_wrapper .dataTables_paginate a.Polaris-Button--disabled.current, .Polaris-Button--primary.btn-secondary:disabled, .dataTables_wrapper .dataTables_paginate a.Polaris-Button--primary.previous:disabled, .dataTables_wrapper .dataTables_paginate a.Polaris-Button--primary.next:disabled, .dataTables_wrapper .dataTables_paginate a.Polaris-Button--primary.paginate_button:disabled, .Polaris-Button--primary.btn-success:disabled, .Polaris-Button--primary.btn-info:disabled, .Polaris-Button--primary.btn-warning:disabled, .Polaris-Button--primary.btn-danger:disabled, .Polaris-Button--primary.btn-light:disabled, .Polaris-Button--primary.btn-dark:disabled, .Polaris-Button--primary.btn-blue:disabled, .Polaris-Button--primary.btn-purple:disabled, .Polaris-Button--primary.btn-teal:disabled, .Polaris-Button--primary.btn-orange:disabled, .Polaris-Button--primary.btn-white:disabled {
@@ -1181,14 +1161,14 @@ sup {
 }
 
 a {
-    color: #5c6ac4;
+    color: #8fb9a8;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
 }
 
 a:hover {
-    color: #38469b;
+    color: #2c664f;
     text-decoration: none
 }
 
@@ -3494,14 +3474,14 @@ a.btn.disabled, .dataTables_wrapper .dataTables_paginate a.disabled.current, .da
 
 .btn-primary, .dataTables_wrapper .dataTables_paginate a.current {
     color: #fff;
-    background-color: #5c6ac4;
-    border-color: #5c6ac4
+    background-color: #8fb9a8;
+    border-color: #8fb9a8
 }
 
 .btn-primary:hover, .dataTables_wrapper .dataTables_paginate a.current:hover {
     color: #fff;
-    background-color: #4252b7;
-    border-color: #3f4eae
+    background-color: #8fb9a8;
+    border-color: #8fb9a8
 }
 
 .btn-primary:focus, .dataTables_wrapper .dataTables_paginate a.current:focus, .btn-primary.focus, .dataTables_wrapper .dataTables_paginate a.focus.current {
@@ -3511,14 +3491,14 @@ a.btn.disabled, .dataTables_wrapper .dataTables_paginate a.disabled.current, .da
 
 .btn-primary.disabled, .dataTables_wrapper .dataTables_paginate a.disabled.current, .btn-primary:disabled, .dataTables_wrapper .dataTables_paginate a.current:disabled {
     color: #fff;
-    background-color: #5c6ac4;
-    border-color: #5c6ac4
+    background-color: #8fb9a8;
+    border-color: #8fb9a8
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .dataTables_wrapper .dataTables_paginate a.current:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .dataTables_wrapper .dataTables_paginate a.current:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle, .dataTables_wrapper .dataTables_paginate .show>a.dropdown-toggle.current {
     color: #fff;
-    background-color: #3f4eae;
-    border-color: #3c4aa5
+    background-color: #8fb9a8;
+    border-color: #8fb9a8
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .dataTables_wrapper .dataTables_paginate a.current:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .dataTables_wrapper .dataTables_paginate a.current:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus, .dataTables_wrapper .dataTables_paginate .show>a.dropdown-toggle.current:focus {
@@ -5804,6 +5784,11 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: .125rem
+}
+
+.w3-card-4, .w3-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
 }
 
 .card>hr {
@@ -9111,7 +9096,8 @@ a.bg-white:hover, a.dataTables_wrapper:hover, a.bg-white:focus, a.dataTables_wra
 
 .position-sticky {
     position: -webkit-sticky !important;
-    position: sticky !important
+    position: sticky !important;
+    top: 0;
 }
 
 .fixed-top {

@@ -24,3 +24,5 @@ Route::resource("users", "UserController");
 Route::resource('categories', 'CategoryController');
 
 Route::resource('rooms', 'RoomController');
+
+Route::resource('buys', 'BuyController');

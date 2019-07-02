@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class BuyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = \App\User::paginate(10);
-        return view('users.index', ['users' => $user]);
+        $rooms = \App\Room::paginate(10);
+        return view('buys.index', ['rooms' => $rooms]);
     }
 
     /**
@@ -23,7 +23,9 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    { }
+    {
+        //
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -33,7 +35,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
@@ -44,8 +46,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = \App\User::findOrFail($id);
-        return view('users.show', ['user' => $user]);
+        $room = \App\Room::findOrFail($id);
+        return view('buys.show', ['room' => $room]);
     }
 
     /**
@@ -56,8 +58,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $user = \App\User::findOrFail($id);
-        return view('users.edit', ['user' => $user]);
+        //
     }
 
     /**
@@ -69,12 +70,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = \App\User::findOrFail($id);
-        $user->name = $request->get('name');
-        $user->address = $request->get('address');
-        $user->phone = $request->get('phone');
-        $user->save();
-        return redirect()->route('users.show', ['id' => $id])->with('status', 'User succesfully updated');
+        //
     }
 
     /**

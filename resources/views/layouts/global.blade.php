@@ -36,11 +36,11 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand p-0">
-        <button class="btn btn-link d-block" data-toggle="collapse" data-target="#sidebar-nav" role="button">
+    <nav class="navbar navbar-expand p-0 position-sticky">
+        <button class="btn btn-link d-block d-md-none" data-toggle="collapse" data-target="#sidebar-nav" role="button">
             <span class="oi oi-menu"></span>
         </button>
-        <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0" href="\home"> Larakost </a>
+        <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0" href="\home"> Lara<b>kost</b> </a>
         <input class="border-light bg-primary form-control d-none d-md-block w-50 ml-3 mr-2" type="text" placeholder="Search" arialabel="Search">
         <div class="dropdown d-none d-md-block">
             @if(\Auth::user())
@@ -65,24 +65,29 @@
             <div class="polished-sidebar col-12 col-md-3 col-lg-2 p-0 collapse d-md-inline" id="sidebar-nav">
                 <ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
                     <li><a href="/home"><span class="oi oi-menu"></span> Home</a></li>
+                    @if(\Auth::user()->roles == "ADMIN")
                     <li><a href="{{route('users.index')}}"><span class="oi oi-people"></span> Manage People</a></li>
                     <li><a href="{{route('rooms.index')}}"><span class="oi oi-home"></span> Manage Room</a></li>
                     <li><a href="#"><span class="oi oi-transfer"></span> Manage Order</a></li>
+                    @elseif(\Auth::user()->roles == "PEOPLE")
+                    <li><a href="{{route('buys.index')}}"><span class="oi oi-home"></span> Buy Room</a></li>
+                    @endif
+                    <li><a href="/info"><span class="oi oi-heart"></span> About</a></li>
                 </ul>
             </div>
-            <div class="col-lg-10 col-md-9 p-4">
-                <div class="row ">
-                    <div class="col-md-12 pl-3 pt-2">
-                        <div class="pl-3">
-                            <h3>@yield("title")</h3>
-                            <br />
-                        </div>
+        </div>
+        <div class="col-lg-10 col-md-9 p-4">
+            <div class="row ">
+                <div class="col-md-12 pl-3 pt-2">
+                    <div class="pl-3">
+                        <h3>@yield("title")</h3>
+                        <br />
                     </div>
                 </div>
-                
-                @yield("content")
-
             </div>
+
+            @yield("content")
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
