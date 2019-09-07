@@ -29,7 +29,7 @@
         <input id="photo" name="photo" type="file" class="form-control">
         <small class="text-muted" style="color:red">Kosongkan jika tidak ingin mengubah photo</small>
         <br>
-        <label for="description">Description</label><br>
+        <label for="description">Facilitis</label><br>
         <textarea name="description" id="description" class="form-control" placeholder="Give a description about this room">{{$room->description}}</textarea>
         <br>
         <label for="stock">Stock</label><br>
@@ -37,6 +37,9 @@
         <br>
         <label for="Price">Price</label> <br>
         <input value="{{$room->price}}" type="number" class="form-control" name="price" id="price" placeholder="Room price">
+        <br>
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address" class="form-control" placeholder="Address this room">{{$room->address}}</textarea>
         <br>
         <input class="btn btn-primary" type="submit" value="Save" />
     </form>

@@ -40,6 +40,7 @@ class RoomController extends Controller
         $new_room->description = $request->get('description');
         $new_room->price = $request->get('price');
         $new_room->stock = $request->get('stock');
+        $new_room->address = $request->get('address');
         if ($request->file('photo')) {
             $file = $request->file('photo')->store('photos', 'public');
             $new_room->photo = $file;
@@ -88,6 +89,7 @@ class RoomController extends Controller
         $room->description = $request->get('description');
         $room->stock = $request->get('stock');
         $room->price = $request->get('price');
+        $room->address = $request->get('address');
         if ($request->file('photo')) {
             $file = $request->file('photo')->store('photos', 'public');
             $room->photo = $file;

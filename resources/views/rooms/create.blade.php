@@ -16,14 +16,24 @@
             <label for="photo">Photo</label>
             <input type="file" class="form-control" id="photo" name="photo">
             <br>
-            <label for="description">Description</label><br>
+            <label for="description">Facilities</label><br>
             <textarea name="description" id="description" class="form-control" placeholder="Give a description about this room"></textarea>
             <br>
             <label for="stock">Stock</label><br>
             <input type="number" class="form-control" id="stock" name="stock" min=1 value=1>
             <br>
-            <label for="Price">Price</label> <br>
-            <input type="number" class="form-control" name="price" id="price" placeholder="Room price">
+            <label for="Price">Price</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">IDR</span>
+                </div>
+                <input type="text" class="form-control" name="price" id="price" placeholder="Room price">
+                <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" class="form-control" placeholder="Address this room"></textarea>
             <br>
             <input class="btn btn-primary" type="submit" value="Save" />
         </form>

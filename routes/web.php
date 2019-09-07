@@ -26,3 +26,9 @@ Route::resource('categories', 'CategoryController');
 Route::resource('rooms', 'RoomController');
 
 Route::resource('buys', 'BuyController');
+
+Route::resource('bookings', 'BookController');
+
+Route::get('show/pdf','DynamicPDFController@pdf');
+
+Route::resource('reports', 'ReportController');

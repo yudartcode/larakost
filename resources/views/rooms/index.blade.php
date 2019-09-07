@@ -16,13 +16,14 @@
     </div>
 </div>
 <div class="row">
-    <table class="table table-bordered">
+    <table class="table table-bordered bg-white">
         <thead>
             <tr>
                 <th><b>Name</b></th>
                 <th><b>Description</b></th>
                 <th><b>Stock</b></th>
                 <th><b>Price</b></th>
+                <th><b>Address</b></th>
                 <th><b>Photo</b></th>
                 <th><b>Action</b></th>
             </tr>
@@ -34,6 +35,7 @@
                 <td>{{$room->description}}</td>
                 <td>{{$room->stock}}</td>
                 <td>{{$room->price}}</td>
+                <td>{{$room->address}}</td>
                 <td>
                     @if($room->photo)
                         <img src="{{asset('storage/'.$room->photo)}}" width="70px">

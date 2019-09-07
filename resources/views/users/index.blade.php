@@ -1,5 +1,5 @@
 @extends('layouts.global')
-@section('title') Rooms @endsection
+@section('title') User @endsection
 @section('content')
 
 @if(session('status'))
@@ -9,7 +9,7 @@
 @endif
 
 <div class="row">
-    <table class="table table-bordered">
+    <table class="table table-bordered bg-white">
         <thead>
             <tr>
                 <th><b>Name</b></th>
